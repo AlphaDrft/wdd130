@@ -33,6 +33,7 @@ p {
     margin: 1rem;
 }
 aside {
+    position: relative;
     width: 20em;
     margin: 1em;
     padding: 1em;
@@ -43,6 +44,7 @@ aside {
     
 }
 aside h2 {
+    position: absolute;
     color: black;
     font-size: 1.8rem;
     margin-bottom: 15px;
