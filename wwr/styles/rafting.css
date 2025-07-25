@@ -1,8 +1,8 @@
 :root {
---primary-color: #005f73;
-    --secondary-color: #94d2bd;
-    --accent1-color: #0a9396;
-    --accent2-color: #000;
+    --primary-color: #004D73;
+    --secondary-color: #346840;
+    --accent1-color: #ff7b00;
+    --accent2-color: #d4c6a8;
     --heading-font: "Old Standard TT", serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -14,27 +14,50 @@
 }
 
 header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    position:relative;
+    color: #f8f8f8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 20px;
 }
 
 body {
     font-family: var(--body-font);
     color: var(--accent1-color);
+    line-height: 1.6;
 }
 
-header, main, footer {
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header img {
+    width: 120px;
+    height: auto;
+}
+
+header,
+main,
+footer {
     width: 840px;
     margin: 0 auto;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-nav, p, section, article {
+p {
+    margin-bottom: 1em;
+}
+
+nav,
+section,
+article {
     margin: 16px;
     padding: 8px;
 }
@@ -47,8 +70,7 @@ article h2 {
 
 article p {
     font-size: 1rem;
-    color: var(--accent1-color);
-    margin-bottom: 20px;
+    color: #555;
 }
 
 article img {
@@ -65,7 +87,9 @@ article img {
 
 .hero {
     position: relative;
+    margin-bottom: 40px;
 }
+
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -77,10 +101,11 @@ article img {
     color: #fff;
     font-size: 2rem;
 }
+
 .hero img {
-    display: block;
     width: 100%;
     height: auto;
+    display: block;
 }
 
 .hero article {
@@ -106,4 +131,55 @@ article img {
     margin-bottom: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+main section {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+main section img {
+    margin-bottom: 1em;
+}
+
+main section p {
+    margin-bottom: 1em;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+footer p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
+.socialmedia {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+}
+
+.socialmedia a:hover img {
+    filter: brightness(1.2);
 }
