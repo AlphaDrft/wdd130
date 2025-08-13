@@ -158,6 +158,31 @@ header nav a:hover {
     margin: 30px auto;
     max-width: 1100px;
 }
+
+.offer {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.offer img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.offer h3,
+.offer p {
+    padding: 0 15px 10px;
+}
+
+.offer:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
 .offerings .offering {
     background: white;
     padding: 20px;
